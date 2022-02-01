@@ -1,0 +1,53 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image: url(IMG/fondo.jpg);
+    background-color: transparent;
+}
+    .topBar{
+        margin: 0px;
+        padding: 7px;
+        background-color: #B22222; 
+        width: 100vw;
+        height: 8vh;
+        box-shadow: 1px 1px 22px 12px rgba(0, 0, 0, 0.3);
+        border-radius: 0px 0px 20px 20px;
+    }
+        .topBarPGLogo{
+            margin: 0vmin;
+            display:flex;
+            height: 8vh;
+        }
+        .topBarTitle{
+            display: flex;
+            position:relative;
+            margin-left: 30%;
+            margin-top: -8vh;
+            font-size: 48px;
+            color: azure;
+            line-height: 1.5em;  
+            text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5);
+            font-family: 'Orbitron', sans-serif;
+        }
+        .topBarInput{
+            display:flex;
+            margin-top: -6em;
+            margin-left: 80%;
+            background: #f8cece;
+            box-shadow: 0px 0px 18px 11px rgba(170, 147, 147, 0.25);
+            border-radius: 16px;
+            padding-left: 8px; 
+            font-family: 'Orbitron', sans-serif;
+        }
+        .topBarSearchButton{
+            display:flex;
+            margin-top: 0em;
+            margin-left: 80%;
+            background: #fff0f0;
+            box-shadow: 0px 0px 18px 11px rgba(170, 147, 147, 0.25);
+            border-radius: 16px;
+            font-family: 'Orbitron', sans-serif;
+        }
