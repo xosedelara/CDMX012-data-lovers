@@ -6,6 +6,3 @@ export const allPokemon = () => {
   return pokedata.pokemon;
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};

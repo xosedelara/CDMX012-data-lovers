@@ -93,3 +93,9 @@ body{
                     background-color: #B22222;
 
                 }
+section article {
+    width: 33%;
+    float: left;
+}     
+
+
