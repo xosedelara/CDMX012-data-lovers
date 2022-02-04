@@ -6,3 +6,7 @@ export const allPokemon = () => {
   return pokedata.pokemon;
 };
 
+export const sortAlphabetically = (pokemons) => {
+  pokemons.sort((a, b) => a.name.localeCompare(b.name));
+  return pokemons;
+};
