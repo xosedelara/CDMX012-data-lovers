@@ -7,13 +7,14 @@ body{
     background-image: url(IMG/fondo.jpg);
     background-color: transparent;
     font-family: 'Orbitron', sans-serif;
+    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
 }
     .topBar{
         margin: 0px;
         padding: 7px;
         background-color: #B22222; 
         width: 100vw;
-        height: 8vh;
+        height: 15vh;
         box-shadow: 1px 1px 22px 12px rgba(0, 0, 0, 0.3);
         border-radius: 0px 0px 20px 20px;
         overflow: auto;
@@ -27,30 +28,31 @@ body{
             position:relative;
             margin-left: 32%;
             margin-top: 1vh;
-            font-size: 48px;
+            font-size: 40px;
             color: azure;
             line-height: 1.5em;  
             text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5);
             font-family: 'Orbitron', sans-serif;
         }
         .topBarInput{
-            float:right;
-            margin-top: -11vh;
-            margin-left: 65%;
+            float: right;
+            margin-top: -8vh;
+            margin-left: auto;
             background: #f8cece;
-            box-shadow: 0px 0px 18px 11px rgba(170, 147, 147, 0.25);
+            box-shadow: 0px 0px 18px 11px rgb(170 147 147 / 25%);
             border-radius: 16px;
-            padding-left: 8px; 
-            font-size: 25px;
-            line-height: 30px;
+            padding-left: 18px;
+            font-size: 20px;
             font-family: 'Orbitron', sans-serif;
+            height: 30px;
+            margin-right: 5%;
         }
         .topBarSearchButton{
-            display:flex;
-            margin-top: -7vh;
+            display: flex;
+            margin-top: -4vh;
             margin-left: 80%;
             background: #fff0f0;
-            box-shadow: 0px 0px 18px 11px rgba(170, 147, 147, 0.25);
+            box-shadow: 0px 0px 18px 11px rgb(170 147 147 / 25%);
             border-radius: 16px;
             font-size: 25px;
             font-family: 'Orbitron', sans-serif;
@@ -94,8 +96,24 @@ body{
 
                 }
 section article {
-    width: 33%;
+    width: 28vw;
+    height: 45vh;
     float: left;
+    margin:1em;
+    background-color: mintcream;
+    align-content:center;
+    padding: 10px;
+    border-radius: 7px;
 }     
+section article img{
+    height:38%;
+}
+section article p{
+    display:block;
+    text-align: justify;
+    padding:2%;
+    background-color: linen;
+    border-radius: 5px;
+}
 
 
