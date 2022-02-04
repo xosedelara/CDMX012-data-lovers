@@ -12,3 +12,7 @@ export const filterType = () => {
 }
 
 
+export const sortAlphabetically = (pokemons) => {
+  pokemons.sort((a, b) => a.name.localeCompare(b.name));
+  return pokemons;
+};

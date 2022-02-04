@@ -1,3 +1,4 @@
+
 /* eslint-disable no-console */
 import * as data from './data.js';
 
@@ -39,5 +40,14 @@ document.getElementById("type").addEventListener('click' function(){
 
 document.getElementById ('root').appendChild(showCards(allPokemon))
 
+//Funcionalidad boton ordenar de A a Z
+document.getElementById('sortAToZ').addEventListener('click', () => {
+    document.getElementById('root').innerHTML = '';
+    document.getElementById ('root').appendChild(showCards(data.sortAlphabetically(allPokemon)));
+});
 
 
+document.getElementById('sortZToA').addEventListener('click', () => {
+    document.getElementById('root').innerHTML = '';
+    document.getElementById ('root').appendChild(showCards(data.sortAlphabetically(allPokemon).reverse()));
+});
