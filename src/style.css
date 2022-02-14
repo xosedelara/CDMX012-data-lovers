@@ -1,7 +1,6 @@
 body{
     padding: 0px;
     margin: 0px;
-    position: absolute;
     left: 0px;
     top: 0px;
     background-image: url(IMG/fondo.jpg);
@@ -10,33 +9,38 @@ body{
     box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
 }
     .topBar{
+        display: flex;
+        justify-content: space-between;
         margin: 0px;
         padding: 7px;
         background-color: #B22222; 
-        width: 100vw;
-        height: 15vh;
+        width: 100%;
+        height: 10vh;
         box-shadow: 1px 1px 22px 12px rgba(0, 0, 0, 0.3);
         border-radius: 0px 0px 20px 20px;
         overflow: auto;
     }
         .topBarPGLogo{
+            justify-self: flex-start;
             margin: 0vmin;
             float:left;
-            height: 8vh;
+            height: 9vh;
         }
         .topBarTitle{
-            position:relative;
-            margin-left: 32%;
-            margin-top: 1vh;
-            font-size: 40px;
+            float:left;
+            justify-self: center;
+            margin-block-end: auto;
+            margin-left: auto;
+            margin-top: .75vh;
+            font-size: 48px;
             color: azure;
             line-height: 1.5em;  
             text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5);
             font-family: 'Orbitron', sans-serif;
         }
         .topBarInput{
-            float: right;
-            margin-top: -8vh;
+            justify-self: flex-end;
+            margin-top: 2.4vh;
             margin-left: auto;
             background: #f8cece;
             box-shadow: 0px 0px 18px 11px rgb(170 147 147 / 25%);
@@ -48,8 +52,9 @@ body{
             margin-right: 5%;
         }
         .topBarSearchButton{
-            display: flex;
-            margin-top: -4vh;
+            justify-self: flex-end;
+            align-self: baseline;
+            margin-top: 8vh;
             margin-left: 80%;
             background: #fff0f0;
             box-shadow: 0px 0px 18px 11px rgb(170 147 147 / 25%);
@@ -59,10 +64,12 @@ body{
 
         }
         .menu{
+            display:flex;
+            justify-self:end;
+            justify-content: space-between;
             list-style: none;
-            margin:3px;
-            padding:0px;
-            width:60%;
+            padding-left:8px;
+            width:100%;
             font-size: 25px;
             line-height: 35px;
             background-color: #8B0000;          
@@ -72,7 +79,10 @@ body{
             .menuSub{
                 width: 30%;
                 display:inline-block;
-                text-align: center;
+                text-align: left;
+            }
+            .menuSub:hover>ul{
+                display: block;
             }
             .menuSub1{
                 width: 200px;
@@ -83,37 +93,61 @@ body{
                 text-align: justify;
                 border-radius: 0px 0px 16px 16px;
             }
-            .menuSub:hover>ul{
-                display: block;
+            .menuSub1:hover>ul{
+                display:block;
             }
-
+            .menuSub2{
+                width: 200px;
+                list-style: none;
+                display:none;
+                position:relative;
+                background-color: #8B0000;
+                text-align: justify;
+                border-radius: 0px 0px 16px 16px;
+            }
                 a{
                     text-decoration: none;
                     color:azure;
                 }
-                a:hover{
+                @media (hover:hover){
+                    .menuSub:hover>ul{
+                        display: block;
+                    }
+                    .a:hover{
                     background-color: #B22222;
-
+                    }
                 }
+section {
+    border-color: gold;
+}
 section article {
     width: 28vw;
-    height: 45vh;
+    height:57vh;
     float: left;
     margin:1em;
+    border-color: gold;
     background-color: mintcream;
     align-content:center;
-    padding: 10px;
+    padding: 10px; 
     border-radius: 7px;
 }     
-section article img{
-    height:38%;
-}
-section article p{
-    display:block;
-    text-align: justify;
-    padding:2%;
-    background-color: linen;
-    border-radius: 5px;
-}
+    section article img{
+        height: 35%;
+        justify-self: center;
+    }
+    section article p{
+        display:block;
+        text-align: justify;
+        padding:2%;
+        background-color: linen;
+        border-radius: 5px;
+    }
+    section article h3{
+        display: flex;
+        justify-content: right;
+        background-color: silver;
+    }
+    article.grass {
+        background-color: green;
 
-
+    }
