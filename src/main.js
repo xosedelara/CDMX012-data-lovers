@@ -28,7 +28,6 @@ const showCards = (pokemons) =>{
 }
 document.getElementById ('root').appendChild(showCards(allPokemon))
 
-
 //Funcionalidad boton ordenar de A a Z
 document.getElementById('sortAToZ').addEventListener('click', () => {
     document.getElementById('root').innerHTML = '';
@@ -44,16 +43,17 @@ document.getElementById('sortZToA').addEventListener('click', () => {
 //Funcionalidad botón ordenar x num descendente
 document.getElementById('sortByNum').addEventListener('click', ()=>{
     document.getElementById('root').innerHTML = '';
-    document.getElementById('root').appendChild(showCards(data.sortByNumber(allPokemon)));
+    document.getElementById('root').appendChild(showCards(data.sortByNumber(allPokemon).reverse()));
 });
 
 //Función al botón del menu para tipos
-document.getElementById('typeSelect').addEventListener('click', ()=>{
+document.getElementById('typeSelect').addEventListener('change', (e)=>{
+    let typeToFilter = e.target.value;
     document.getElementById('root').innerHTML='';
-    document.getElementById ('root').appendChild(showTypes(data.poketypes(allPokemon)));
+    document.getElementById ('root').appendChild(showCards(data.typeFilter(typeToFilter,allPokemon)));
 });
 
-//Función para mostrar menú de tipos 
+/* //Función para mostrar menú de tipos 
 const showTypes = (singleTypes) =>{
     const typeSection = document.createElement ('section')
     //for (let i=0; i <= pokemons.length; i++)
@@ -65,5 +65,9 @@ const showTypes = (singleTypes) =>{
         typeCard.appendChild (pokemonType)
         typeSection.appendChild (typeCard)
     }return typeSection
-
 }
+document.getElementById ('root').appendChild(showTypes(allPokemon))
+//Función para asignar atributos a los botones creados para tipos
+ const typeAtributes = (typeSection)=>{
+
+} */
