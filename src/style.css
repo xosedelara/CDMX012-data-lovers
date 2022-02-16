@@ -85,7 +85,7 @@ body{
                 display: block;
             }
             .menuSub1{
-                width: 200px;
+                width: 25%;
                 list-style: none;
                 display:none;
                 position:absolute;
@@ -117,6 +117,7 @@ body{
                     background-color: #B22222;
                     }
                 }
+
 section {
     border-color: gold;
 }
@@ -150,4 +151,7 @@ section article {
     article.grass {
         background-color: green;
 
+    }
+    .grass{
+        background-color: green;
     }

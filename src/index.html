@@ -10,8 +10,7 @@
     <section class="topBar">
       <img class="topBarPGLogo" src="IMG/pokemon-go-logo-F26FDCA39C-seeklogo.com.png" alt="Logo de Pokemon Go">
       <h1 class="topBarTitle">Pokedex!</h1>
-      <input class="topBarInput" id="topBarSearch" type="text" placeholder="Buscar en Pokedex...">
-
+      <input class="topBarInput" id="topBarSearch" type="search" placeholder="Buscar Pokemon...">
     </section>
     <nav>
       <ul class="menu">
@@ -24,19 +23,74 @@
             <li><a id='sortByNum'>Last to first</a></li>
           </ul>
         </li>
-        <select name="Pokemon type" id="typeSelect">
-          <option value="none">None</option>
-          <option value="grass">Grass</option>
-          <option value="fire">Fire</option>
-          <option value="water">Water</option>
-          <option value="electric">Electric</option>
-        </select>
         <li class="menuSub"><a href="">Filter</a>
           <ul class="menuSub1">
-            <li><a id="">Type</a></li>
-            <li><a id="weaknessSelect">Weakness</a></li>
-            <li><a id="strengthSelect">Strength</a></li>
-            <li><a id="evolutionSelect">Evolution</a></li>
+            <li><a id="">Type</a>
+            <select name="Pokemon type" id="typeSelect"class="selectType">
+              <option value="none">None</option>
+              <option value="normal">Normal</option>
+              <option value="fire">Fire</option>
+              <option value="water">Water</option>
+              <option value="electric">Electric</option>
+              <option value="grass">Grass</option>
+              <option value="flying">Flying</option>
+              <option value="rock">Rock</option>
+              <option value="steel">Steel</option>
+              <option value="ground">Ground</option>
+              <option value="bug">Bug</option>
+              <option value="poison">Poison</option>
+              <option value="ice">Ice</option>
+              <option value="fighting">Fighting</option>
+              <option value="psychic">Psychic</option>
+              <option value="dark">Dark</option>
+              <option value="ghost">Ghost</option>
+              <option value="dragon">Dragon</option>
+              <option value="fairy">Fairy</option>
+            </select></li>
+            <li><a id="">Weakness</a>
+              <select name="Pokemon type" id="weaknessSelect"class="selectType">
+                <option value="none">None</option>
+                <option value="normal">Normal</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="electric">Electric</option>
+                <option value="grass">Grass</option>
+                <option value="flying">Flying</option>
+                <option value="rock">Rock</option>
+                <option value="steel">Steel</option>
+                <option value="ground">Ground</option>
+                <option value="bug">Bug</option>
+                <option value="poison">Poison</option>
+                <option value="ice">Ice</option>
+                <option value="fighting">Fighting</option>
+                <option value="psychic">Psychic</option>
+                <option value="dark">Dark</option>
+                <option value="ghost">Ghost</option>
+                <option value="dragon">Dragon</option>
+                <option value="fairy">Fairy</option>
+              </select></li>
+            <li><a id="">Resistance</a>
+              <select name="Pokemon type" id="resistSelect"class="selectType">
+                <option value="none">None</option>
+                <option value="normal">Normal</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="electric">Electric</option>
+                <option value="grass">Grass</option>
+                <option value="flying">Flying</option>
+                <option value="rock">Rock</option>
+                <option value="steel">Steel</option>
+                <option value="ground">Ground</option>
+                <option value="bug">Bug</option>
+                <option value="poison">Poison</option>
+                <option value="ice">Ice</option>
+                <option value="fighting">Fighting</option>
+                <option value="psychic">Psychic</option>
+                <option value="dark">Dark</option>
+                <option value="ghost">Ghost</option>
+                <option value="dragon">Dragon</option>
+                <option value="fairy">Fairy</option>
+              </select></li>
           </ul>
         </li>
       </ul>

@@ -1,8 +1,14 @@
 /* eslint-disable no-console */
 import * as data from './data.js';
+//import pokemon from './data/pokemon/pokemon.js';
 
 //Constante de data de todos los pokemones
 const allPokemon =data.allPokemon ()
+const root = document.getElementById('root');
+const typeSelect=document.getElementById("typeSelect");
+const weaknessSelect = document.getElementById("weaknessSelect");
+const resistSelect = document.getElementById("resistSelect");
+const pokemonSearch = document.getElementById('topBarSearch')
 //Función para mostrar Pokemones
 const showCards = (pokemons) =>{
     const pokemonSection = document.createElement ('section')
@@ -24,33 +30,49 @@ const showCards = (pokemons) =>{
         pokemonCard.appendChild (pokemonInfo)
         pokemonSection.appendChild (pokemonCard)
     }return pokemonSection
-    
 }
-document.getElementById ('root').appendChild(showCards(allPokemon))
+root.appendChild(showCards(allPokemon))
 
 //Funcionalidad boton ordenar de A a Z
 document.getElementById('sortAToZ').addEventListener('click', () => {
     document.getElementById('root').innerHTML = '';
-    document.getElementById ('root').appendChild(showCards(data.sortAlphabetically(allPokemon)));
+    root.appendChild(showCards(data.sortAlphabetically(allPokemon)));
 });
 
 //Funcionalidad boton ordenar de Z a A
 document.getElementById('sortZToA').addEventListener('click', () => {
-    document.getElementById('root').innerHTML = '';
-    document.getElementById ('root').appendChild(showCards(data.sortAlphabetically(allPokemon).reverse()));
+    root.innerHTML = '';
+    root.appendChild(showCards(data.sortAlphabetically(allPokemon).reverse()));
 });
 
 //Funcionalidad botón ordenar x num descendente
 document.getElementById('sortByNum').addEventListener('click', ()=>{
-    document.getElementById('root').innerHTML = '';
-    document.getElementById('root').appendChild(showCards(data.sortByNumber(allPokemon).reverse()));
+    root.innerHTML = '';
+    root.appendChild(showCards(data.sortByNumber(allPokemon).reverse()));
 });
 
 //Función al botón del menu para tipos
-document.getElementById('typeSelect').addEventListener('change', (e)=>{
+typeSelect.addEventListener('change', (e)=>{
     let typeToFilter = e.target.value;
-    document.getElementById('root').innerHTML='';
-    document.getElementById ('root').appendChild(showCards(data.typeFilter(typeToFilter,allPokemon)));
+    root.innerHTML='';
+    root.appendChild(showCards(data.typeFilter(typeToFilter,allPokemon)));
+});
+weaknessSelect.addEventListener('change', (e)=>{
+    let weaknessToFilter = e.target.value;
+    root.innerHTML='';
+    root.appendChild(showCards(data.weaknessFilter(weaknessToFilter,allPokemon)));
+});
+resistSelect.addEventListener('change', (e)=>{
+    let resistanceToFilter = e.target.value;
+    root.innerHTML='';
+    root.appendChild(showCards(data.resistanceFilter(resistanceToFilter,allPokemon)));
+});
+
+//Función de buscador
+pokemonSearch.addEventListener('keyup',(e)=>{
+    let pokemonToSearch = e.target.value.toLowerCase();
+    root.innerHTML='';
+    root.appendChild(showCards(data.pokemonFind(pokemonToSearch, allPokemon)));
 });
 
 /* //Función para mostrar menú de tipos 
@@ -69,5 +91,4 @@ const showTypes = (singleTypes) =>{
 document.getElementById ('root').appendChild(showTypes(allPokemon))
 //Función para asignar atributos a los botones creados para tipos
  const typeAtributes = (typeSection)=>{
-
-} */
+}*/
