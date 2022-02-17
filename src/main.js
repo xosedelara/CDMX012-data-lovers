@@ -23,6 +23,7 @@ const showCards = (pokemons) =>{
         pokemonName.textContent = pokemon.name
         pokemonType.textContent = pokemon.type
         pokemonInfo.textContent = pokemon.about
+        console.log(pokemon.about)
         pokemonImage.src = pokemon.img
         pokemonCard.appendChild (pokemonName)
         pokemonCard.appendChild (pokemonImage)
@@ -74,21 +75,3 @@ pokemonSearch.addEventListener('keyup',(e)=>{
     root.innerHTML='';
     root.appendChild(showCards(data.pokemonFind(pokemonToSearch, allPokemon)));
 });
-
-/* //Función para mostrar menú de tipos 
-const showTypes = (singleTypes) =>{
-    const typeSection = document.createElement ('section')
-    //for (let i=0; i <= pokemons.length; i++)
-    //pokemons[i].name 
-    for (const type of singleTypes) {
-        const typeCard = document.createElement ('article')
-        const pokemonType = document.createElement ('h3')
-        pokemonType.textContent = type
-        typeCard.appendChild (pokemonType)
-        typeSection.appendChild (typeCard)
-    }return typeSection
-}
-document.getElementById ('root').appendChild(showTypes(allPokemon))
-//Función para asignar atributos a los botones creados para tipos
- const typeAtributes = (typeSection)=>{
-}*/
