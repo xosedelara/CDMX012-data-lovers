@@ -1,0 +1,262 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    background-image: url(IMG/fondo.jpg);
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.109);
+
+}
+    .topBar{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 7px;
+        background-color: #B22222; 
+        width: 100%;
+        height: 10vh;
+        box-shadow: 1px 1px 22px 12px rgba(0, 0, 0, 0.562);
+        border-radius: 0px 0px 20px 20px;
+        overflow: auto;
+    }
+        .topBarPGLogo{
+            justify-self: flex-start;
+            margin: 0vmin;
+            float:left;
+            height: 9vh;
+        }
+        .topBarTitle{
+            float:left;
+            justify-self: center;
+            margin-block-end: auto;
+            margin-left: auto;
+            margin-top: .75vh;
+            font-size: 48px;
+            color: azure;
+            line-height: 1.5em;  
+            text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.5);
+            font-family: 'Orbitron', sans-serif;
+        }
+        .topBarInput{
+            justify-self: flex-end;
+            margin-top: 2.4vh;
+            margin-left: auto;
+            background: #f8cece;
+            box-shadow: 0px 0px 18px 11px rgb(170 147 147 / 25%);
+            border-radius: 16px;
+            padding-left: 18px;
+            font-size: 20px;
+            font-family: 'Orbitron', sans-serif;
+            height: 30px;
+            margin-right: 5%;
+        }
+        .topBarSearchButton{
+            justify-self: flex-end;
+            align-self: baseline;
+            margin-top: 8vh;
+            margin-left: 80%;
+            background: #fff0f0;
+            box-shadow: 0px 0px 18px 11px rgb(170 147 147 / 25%);
+            border-radius: 16px;
+            font-size: 25px;
+            font-family: 'Orbitron', sans-serif;
+
+        }
+        .menu{
+            display:flex;
+            justify-self:end;
+            justify-content: space-between;
+            list-style: none;
+            padding-left:8px;
+            width:100%;
+            font-size: 25px;
+            line-height: 35px;
+            background-color: #8B0000;          
+            border-radius: 16px;  
+            text-align: center;
+            box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
+        }
+            .menuSub{
+                width: 30%;
+                display:inline-block;
+                text-align: left;
+            }
+            .menuSub:hover>ul{
+                display: block;
+            }
+            .menuSub1{
+                width: 25%;
+                list-style: none;
+                display:none;
+                position:absolute;
+                background-color: #8B0000;
+                text-align: justify;
+                border-radius: 0px 0px 16px 16px;
+                box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
+            }
+            .menuSub1:hover>ul{
+                display:block;
+            }
+            .menuSub2{
+                width: 200px;
+                list-style: none;
+                display:none;
+                position:relative;
+                background-color: #8B0000;
+                text-align: justify;
+                border-radius: 0px 0px 16px 16px;
+                box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
+            }
+                a{
+                    text-decoration: none;
+                    color:azure;
+                }
+                @media (hover:hover){
+                    .menuSub:hover>ul{
+                        display: block;
+                    }
+                    .a:hover{
+                    background-color: #B22222;
+                    }
+                }
+
+section article {
+    display: block;
+    width: 28vw;
+    height:57vh;
+    float:left;
+    margin:1em;
+    background-color: rgba(245, 255, 250, 0.767);
+    align-content:center;
+    padding: 10px; 
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
+}     
+    section article img{
+        display:block;
+        width: fit-content;
+        height: 40%;
+        justify-self:center;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    section article h2{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    section article p{
+        display:block;
+        text-align: justify;
+        padding:2%;
+        background-color: linen;
+        border-radius: 5px;
+    }
+    section article h3{
+        display: flex;
+        justify-content: right;
+        background-color: rgba(192, 192, 192, 0.5);
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .grass, .grass\,poison, .grass\,psychic, .grass\,flying{
+        background-color: rgb(120,200,80,0.596);
+    }
+    .fire, .fire\,flying, .fire\,rock{
+        background-color: rgba(240,80,48, 0.596);
+    }
+    .water, .water\,fighting, .water\,poison, .water\,psychic, .water\,ice, .water\,flying, .water\,electric, .water\,fairy, .water\,ground, .water\,rock, .water\,dragon{
+        background-color: rgba(56,153,248, 0.596);
+    }
+    .electric, .electric\,flying{
+        background-color: rgba(248, 208, 48, 0.596);
+    }
+    .psychic, .psychic\,flying, .psychic\,grass{
+        background-color: rgba(248, 112, 160, 0.596);
+    }
+    .normal, .normal\,flying, .normal\,fairy, .normal\,psychic{
+        background-color: rgba(168, 160, 144, 0.596);
+    }
+    .flying{
+        background-color: rgba(152,168,240,0.596);
+    }
+    .rock, .rock\,ground, .rock\,water, .rock\,flying, .rock\,dark{
+        background-color: rgba(184,160,88,0.596);
+    }
+    .steel, .steel\,ground, .steel\,flying{
+        background-color: rgba(168,168,192,0.596);
+    }
+    .ground, .ground\,flying{
+        background-color: rgba(234,214,164,0.596);
+    }
+    .bug, .bug\,flying, .bug\,poison, .bug\,grass, .bug\,steel, .bug\,rock, .bug\,fighting{
+        background-color: rgba(168,184,32,0.596);
+    }
+    .poison, .poison\,ground, .poison\,flying{
+        background-color: 	rgba(176,88,160,0.596);
+    }
+    .ice, .ice\,psychic, .ice\,flying, .ice\,ground{
+        background-color: rgba(88,200,224,0.596);
+    }
+    .fighting{
+        background-color: rgba(160,80,56,0.596);
+    }
+    .dark, .dark\,flying, .dark\,ice, .dark\,fire{
+        background-color: 	rgba(122,88,72,0.596);
+    }
+    .ghost, .ghost\,poison{
+        background-color: rgba(96,96,176,0.596);
+    }
+    .dragon, .dragon\,flying{
+        background-color: rgba(160,80,56,0.596);
+    }
+    .fairy, .fairy\,flying{
+        background-color: rgba(231,159,231,0.596);
+    }
+
+
+/* 
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    //height: 100vh;
+    //width: 100vw;
+}
+.modalClose{
+    transform: translateY(.200%);
+}
+.modalContent{
+    width: 40%;
+    height: 50%;
+    background: #ffff;
+    text-align: center;
+    display: flex;
+    position:relative;
+    transition: transform 1s;
+    transform: translateY(0);
+} 
+.close{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+} */
