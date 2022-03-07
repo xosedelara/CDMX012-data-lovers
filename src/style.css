@@ -4,9 +4,9 @@ body{
     left: 0px;
     top: 0px;
     background-image: url(IMG/fondo.jpg);
-    background-color: transparent;
     font-family: 'Orbitron', sans-serif;
-    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 20px 4px rgba(0, 0, 0, 0.109);
+
 }
     .topBar{
         display: flex;
@@ -16,7 +16,7 @@ body{
         background-color: #B22222; 
         width: 100%;
         height: 10vh;
-        box-shadow: 1px 1px 22px 12px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 22px 12px rgba(0, 0, 0, 0.562);
         border-radius: 0px 0px 20px 20px;
         overflow: auto;
     }
@@ -75,6 +75,7 @@ body{
             background-color: #8B0000;          
             border-radius: 16px;  
             text-align: center;
+            box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
         }
             .menuSub{
                 width: 30%;
@@ -92,6 +93,7 @@ body{
                 background-color: #8B0000;
                 text-align: justify;
                 border-radius: 0px 0px 16px 16px;
+                box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
             }
             .menuSub1:hover>ul{
                 display:block;
@@ -104,6 +106,7 @@ body{
                 background-color: #8B0000;
                 text-align: justify;
                 border-radius: 0px 0px 16px 16px;
+                box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
             }
                 a{
                     text-decoration: none;
@@ -118,23 +121,36 @@ body{
                     }
                 }
 
-section {
-    border-color: gold;
-}
 section article {
+    display: block;
     width: 28vw;
     height:57vh;
-    float: left;
+    float:left;
     margin:1em;
-    border-color: gold;
-    background-color: mintcream;
+    background-color: rgba(245, 255, 250, 0.767);
     align-content:center;
     padding: 10px; 
     border-radius: 7px;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0);    
 }     
     section article img{
-        height: 35%;
-        justify-self: center;
+        display:block;
+        width: fit-content;
+        height: 40%;
+        justify-self:center;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    section article h2{
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
     section article p{
         display:block;
@@ -146,12 +162,101 @@ section article {
     section article h3{
         display: flex;
         justify-content: right;
-        background-color: silver;
+        background-color: rgba(192, 192, 192, 0.5);
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
-    article.grass {
-        background-color: green;
+    .grass, .grass\,poison, .grass\,psychic, .grass\,flying{
+        background-color: rgb(120,200,80,0.596);
+    }
+    .fire, .fire\,flying, .fire\,rock{
+        background-color: rgba(240,80,48, 0.596);
+    }
+    .water, .water\,fighting, .water\,poison, .water\,psychic, .water\,ice, .water\,flying, .water\,electric, .water\,fairy, .water\,ground, .water\,rock, .water\,dragon{
+        background-color: rgba(56,153,248, 0.596);
+    }
+    .electric, .electric\,flying{
+        background-color: rgba(248, 208, 48, 0.596);
+    }
+    .psychic, .psychic\,flying, .psychic\,grass{
+        background-color: rgba(248, 112, 160, 0.596);
+    }
+    .normal, .normal\,flying, .normal\,fairy, .normal\,psychic{
+        background-color: rgba(168, 160, 144, 0.596);
+    }
+    .flying{
+        background-color: rgba(152,168,240,0.596);
+    }
+    .rock, .rock\,ground, .rock\,water, .rock\,flying, .rock\,dark{
+        background-color: rgba(184,160,88,0.596);
+    }
+    .steel, .steel\,ground, .steel\,flying{
+        background-color: rgba(168,168,192,0.596);
+    }
+    .ground, .ground\,flying{
+        background-color: rgba(234,214,164,0.596);
+    }
+    .bug, .bug\,flying, .bug\,poison, .bug\,grass, .bug\,steel, .bug\,rock, .bug\,fighting{
+        background-color: rgba(168,184,32,0.596);
+    }
+    .poison, .poison\,ground, .poison\,flying{
+        background-color: 	rgba(176,88,160,0.596);
+    }
+    .ice, .ice\,psychic, .ice\,flying, .ice\,ground{
+        background-color: rgba(88,200,224,0.596);
+    }
+    .fighting{
+        background-color: rgba(160,80,56,0.596);
+    }
+    .dark, .dark\,flying, .dark\,ice, .dark\,fire{
+        background-color: 	rgba(122,88,72,0.596);
+    }
+    .ghost, .ghost\,poison{
+        background-color: rgba(96,96,176,0.596);
+    }
+    .dragon, .dragon\,flying{
+        background-color: rgba(160,80,56,0.596);
+    }
+    .fairy, .fairy\,flying{
+        background-color: rgba(231,159,231,0.596);
+    }
 
-    }
-    .grass{
-        background-color: green;
-    }
+
+/* 
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    //height: 100vh;
+    //width: 100vw;
+}
+.modalClose{
+    transform: translateY(.200%);
+}
+.modalContent{
+    width: 40%;
+    height: 50%;
+    background: #ffff;
+    text-align: center;
+    display: flex;
+    position:relative;
+    transition: transform 1s;
+    transform: translateY(0);
+} 
+.close{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+} */
